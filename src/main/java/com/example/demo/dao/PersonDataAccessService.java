@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+// for connecting postgres database
 @Repository("postgres")
 public class PersonDataAccessService implements PersonDao {
 
