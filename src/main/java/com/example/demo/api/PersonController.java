@@ -11,6 +11,7 @@ import java.util.UUID;
 // define the path
 @RequestMapping("api/v1/person")
 @RestController
+// controller層負責具體業務模塊流程控制，此層要調用service層的接口來控制業務流程
 public class PersonController {
 
     private final PersonService personService;

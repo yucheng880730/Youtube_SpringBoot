@@ -13,12 +13,13 @@ import java.util.UUID;
 
 // inside this class have a method to insert a new person
 // @Component can also work
+// service層主要調用已經定義的Dao層接口
 @Service
 public class PersonService {
 
     private final PersonDao personDao;
 
-    // the way that we injected is simply add annotation
+    // the way that we injected is simply add annotation @Autowired
     // "fakeDao"
     @Autowired
     public PersonService(@Qualifier("postgres") PersonDao personDao) {

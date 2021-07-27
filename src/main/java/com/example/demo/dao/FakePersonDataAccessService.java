@@ -12,8 +12,10 @@ import java.util.UUID;
 // so that we can injected in all the class
 // @Component can also work
 @Repository("fakeDao")
+// define a person access service implementation of the Person DAO interface
 public class FakePersonDataAccessService implements PersonDao{
 
+    // declare a new list for person in DB
     private static List<Person> DB = new ArrayList<>();
 
     @Override

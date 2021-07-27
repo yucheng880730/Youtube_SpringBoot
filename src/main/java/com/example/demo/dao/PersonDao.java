@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+// Data Access Object(DAO) pattern is a structural pattern that allows us to isolate
+// the application/business layer from the persistence layer(usually relational DB)
+// using an abstract API
 public interface PersonDao {
 
     // insert person with id
